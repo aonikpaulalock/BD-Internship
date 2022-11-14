@@ -1,0 +1,13 @@
+/* // 2. Include any default variable overrides here */
+$primary:#4E7D96;
+$secondary:#7D6AEB;
+$success:#2ED67B;
+$info: #6F96AA;
+$warning:#FF844B;
+$danger:#FF606B;
+$cyan:#3CC2E0;
+:root {
+  $cyan:#3CC2E0;
+}
+  /* // 3. Include remainder of required Bootstrap stylesheets */
+@import "../node_modules/bootstrap/scss/variables";
