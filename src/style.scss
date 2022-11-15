@@ -1,8 +1,11 @@
 // Custom.scss
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
 }
 
 .dashboard-container {
@@ -21,17 +24,22 @@
   background-color: #FFFFFF;
   order: 1
 }
+
 .navber-custom {
   margin: 50px 50px 60px 50px;
 }
 
 .input-field {
+  border: none;
   color: #4E7D96;
-  width: 400px;
   height: 60px;
   background: #FFFFFF;
   border-radius: 20px;
   padding: 0 70px;
+}
+
+.input-field:focus {
+  outline: none !important;
 }
 
 .logo-container {
@@ -59,6 +67,7 @@
   margin-bottom: 20px;
   transition: .5s all .1s linear;
 }
+
 .dasboard-icon:hover {
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
 }
@@ -76,6 +85,30 @@
   height: 60px;
   background: #6F96AA;
   border-radius: 20px;
+}
+
+.admin-datails h5 {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  color: #4E7D96;
+  margin-bottom: 0;
+}
+.admin-datails p {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6F96AA;
+}
+
+.custom-badge {
+  color: #FFFFFF;
+  font-weight: 700;
+  background: #FF844B;
+  border-radius: 5px;
 }
 
 // Option B: Include parts of Bootstrap

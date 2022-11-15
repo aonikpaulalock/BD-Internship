@@ -11,25 +11,35 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-item" aria-current="page" href="#">
-            <img src="./assets/Svg/45-chat.svg" alt="">
-          </a>
-        </li>
-        <li class="nav-item mx-5">
-          <img src="./assets/Svg/announcement.svg" alt="">
-        </li>
-        <li class="nav-item">
+      <ul class="navbar-nav ms-auto">
+        <li class="d-flex justify-content-around align-items-center me-5">
+        <div>
+          <button type="button" class="btn btn-none">
+              <img src="./assets/Svg/45-chat.svg" alt="">
+                  <h1 class="translate-middle badge custom-badge">
+                   2
+                  </h1>
+           </button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-none">
+              <img src="./assets/Svg/announcement.svg" alt="">
+                  <h1 class="translate-middle badge custom-badge">
+                   2
+               </h1>
+           </button>
+        </div>
+        <div class="px-3 py-1">
           <img src="./assets/Svg/Setting.svg" alt="">
+        </div>
         </li>
-        <div class="nav-item ms-5">
-         <div class="d-flex">
+        <div class="nav-item">
+         <div class="d-flex align-content-center">
           <div class="image-admin me-4">
           </div>
-          <div>
+          <div className="admin-datails">
             <h5>Madison Eve</h5>
-            <h6>Admin</h6>
+            <p>Admin</p>
           </div> 
          </div>
         </div>
