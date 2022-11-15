@@ -17,6 +17,7 @@
   background-color: rgba(60, 194, 224, 0.1);
   width: 100%;
   order: 2;
+  padding: 45px 40px;
 }
 
 .slidebar-container {
@@ -25,13 +26,13 @@
   order: 1
 }
 
-.navber-custom {
-  margin: 50px 50px 60px 50px;
-}
-
 .input-field {
+  font-family: 'Cairo';
+  font-style: italic;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4E7D96 !important;
   border: none;
-  color: #4E7D96;
   height: 60px;
   background: #FFFFFF;
   border-radius: 20px;
@@ -55,7 +56,7 @@
 }
 
 .dasboard-main-icon {
-  margin: 50px 50px 60px 50px;
+  margin:50px;
 }
 
 .dasboard-icon {
@@ -64,7 +65,7 @@
   margin: 0 auto;
   background: #FFFFFF;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   transition: .5s all .1s linear;
 }
 
@@ -96,6 +97,7 @@
   color: #4E7D96;
   margin-bottom: 0;
 }
+
 .admin-datails p {
   font-family: 'Cairo';
   font-style: normal;
@@ -109,6 +111,48 @@
   font-weight: 700;
   background: #FF844B;
   border-radius: 5px;
+}
+
+// main content css
+.dashboard-heading {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 67px;
+  color: #14172E;
+  padding: 40px 0;
+}
+
+.card-container {
+  background-color: #FFFFFF;
+  padding: 30px;
+  box-shadow: 0px 16px 25px rgba(78, 125, 150, 0.1);
+  border-radius: 20px;
+}
+
+.card-image {
+  border: 2px solid #E3EBF1;
+  border-radius: 40px;
+  padding: 18px
+}
+
+.card-sub-heading h5{
+  font-family: 'Cairo';
+  font-style: italic;
+  font-size: 18px;
+  line-height: 25px;
+  color: #4E7D96;
+  margin-bottom: 0;
+}
+.card-sub-heading h6{
+  font-family: 'Cairo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 45px;
+  color: #14172E;
+  margin-bottom: 0;
 }
 
 // Option B: Include parts of Bootstrap
