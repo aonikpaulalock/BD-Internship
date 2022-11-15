@@ -1,4 +1,82 @@
 // Custom.scss
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  width: 100%;
+  display: flex;
+}
+
+.header-container {
+  background-color: rgba(60, 194, 224, 0.1);
+  width: 100%;
+  order: 2;
+}
+
+.slidebar-container {
+  width: 160px;
+  background-color: #FFFFFF;
+  order: 1
+}
+.navber-custom {
+  margin: 50px 50px 60px 50px;
+}
+
+.input-field {
+  color: #4E7D96;
+  width: 400px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 0 70px;
+}
+
+.logo-container {
+  text-align: center;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.dasboard-icon,
+.dasboard-main-icon {
+  list-style: none;
+  cursor: pointer;
+}
+
+.dasboard-main-icon {
+  margin: 50px 50px 60px 50px;
+}
+
+.dasboard-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: .5s all .1s linear;
+}
+.dasboard-icon:hover {
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.dasboard-icon img {
+  padding: 17px;
+}
+
+.svg-vactor {
+  padding: 20px 0 0 21px;
+}
+
+.image-admin {
+  width: 60px;
+  height: 60px;
+  background: #6F96AA;
+  border-radius: 20px;
+}
 
 // Option B: Include parts of Bootstrap
 
