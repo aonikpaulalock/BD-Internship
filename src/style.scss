@@ -1,12 +1,15 @@
 // Custom.scss
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
 
+// ========= All Css
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Cairo', sans-serif;
 }
+
+// Custom css
 
 .dashboard-container {
   width: 100%;
@@ -20,10 +23,18 @@
   padding: 45px 40px;
 }
 
+// Slider css
+
 .slidebar-container {
   width: 160px;
   background-color: #FFFFFF;
   order: 1
+}
+
+.custom-nav-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .input-field {
@@ -56,7 +67,7 @@
 }
 
 .dasboard-main-icon {
-  margin:50px;
+  margin: 50px;
 }
 
 .dasboard-icon {
@@ -76,9 +87,14 @@
 .dasboard-icon img {
   padding: 17px;
 }
-
-.svg-vactor {
-  padding: 20px 0 0 21px;
+.search-place {
+  position: relative;
+}
+.search-position {
+  position: absolute;
+  top:35%;
+  left: 7%;
+  // padding: 25px 0 0 21px;
 }
 
 .image-admin {
@@ -137,7 +153,7 @@
   padding: 18px
 }
 
-.card-sub-heading h5{
+.card-sub-heading h5 {
   font-family: 'Cairo';
   font-style: italic;
   font-size: 18px;
@@ -145,7 +161,8 @@
   color: #4E7D96;
   margin-bottom: 0;
 }
-.card-sub-heading h6{
+
+.card-sub-heading h6 {
   font-family: 'Cairo';
   font-style: normal;
   font-weight: 700;
@@ -154,6 +171,210 @@
   color: #14172E;
   margin-bottom: 0;
 }
+
+// Media Queries
+
+@media (max-width:990px) {
+  .custom-nav-icon {
+    margin-top: 10px;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width:660px) {
+  .header-container {
+    padding: 45px 10px;
+  }
+
+  .slidebar-container {
+    width: 80px;
+  }
+
+  .dasboard-main-icon {
+    margin: 50px 10px;
+  }
+}
+
+@media (max-width:560px) {
+  .search-position {
+    top:30%;
+    left:2%;
+  }
+  .header-container {
+    flex-direction: row;
+  }
+  .dasboard-main-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  .input-field {
+    font-size: 12px;
+    line-height: 15px;
+    height: 50px;
+    padding: 0 35px;
+    margin-bottom: 5px
+  }
+ 
+}
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: "Cairo", sans-serif;
+// }
+// body {
+//   font-family: "Cairo", sans-serif;
+// }
+// .dashboard-container {
+//   width: 100%;
+//   display: flex;
+// }
+
+// .header-container {
+//   background-color: rgba(60, 194, 224, 0.1);
+//   width: 100%;
+//   order: 2;
+//   padding-top: 40px;
+//   padding-left: 40px;
+//   padding-right: 40px;
+//   // padding: 45px 40px;
+// }
+
+// .sidebar-container {
+//   width: 160px;
+//   background-color: #ffffff;
+//   order: 1;
+// }
+
+// .input-field {
+//   // font-style: italic;
+//   font-size: 18px;
+//   line-height: 25px;
+//   color: #4e7d96 !important;
+//   border: none;
+//   height: 60px;
+//   background: #ffffff;
+//   border-radius: 20px;
+//   padding: 0 70px;
+// }
+
+// .input-field:focus {
+//   outline: none !important;
+// }
+
+// .logo-container {
+//   text-align: center;
+//   padding: 0 !important;
+//   margin: 0 !important;
+//   display: flex !important;
+//   flex-direction: column !important;
+// }
+
+// .dashboard-icon,
+// .dashboard-main-icon {
+//   list-style: none;
+//   cursor: pointer;
+// }
+
+// .dashboard-main-icon {
+//   margin: 50px;
+// }
+
+// .dashboard-icon {
+//   width: 60px;
+//   height: 60px;
+//   margin: 0 auto;
+//   background: #ffffff;
+//   border-radius: 20px;
+//   margin-bottom: 15px;
+//   transition: 0.5s all 0.1s linear;
+// }
+
+// .dashboard-icon:hover {
+//   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+// }
+
+// .dashboard-icon img {
+//   padding: 17px;
+// }
+
+// .svg-vector {
+//   padding: 20px 0 0 21px;
+// }
+
+// .image-admin {
+//   width: 60px;
+//   height: 60px;
+//   background: #6f96aa;
+//   border-radius: 20px;
+// }
+
+// .admin-details h5 {
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 34px;
+//   color: #4e7d96;
+//   margin-bottom: 0;
+// }
+
+// .admin-details p {
+//   font-style: normal;
+//   font-size: 18px;
+//   line-height: 20px;
+//   color: #6f96aa;
+// }
+
+// .custom-badge {
+//   color: #ffffff;
+//   font-weight: 700;
+//   background: #ff844b;
+//   border-radius: 5px;
+// }
+
+// // main content css
+// .dashboard-heading {
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 67px;
+//   color: #14172e;
+//   padding: 20px 0;
+// }
+
+// .card-container {
+//   background-color: #ffffff;
+//   padding: 30px;
+//   box-shadow: 0px 16px 25px rgba(78, 125, 150, 0.1);
+//   border-radius: 20px;
+//   margin-top: 20px;
+// }
+
+// .card-image {
+//   border: 2px solid #e3ebf1;
+//   border-radius: 40px;
+//   padding: 18px;
+// }
+
+// .card-sub-heading h5 {
+//   // font-style: italic;
+//   font-size: 18px;
+//   line-height: 25px;
+//   color: #4e7d96;
+//   margin-bottom: 0;
+// }
+// .card-sub-heading h6 {
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 45px;
+//   color: #14172e;
+//   margin-bottom: 0;
+// }
+
 
 // Option B: Include parts of Bootstrap
 
